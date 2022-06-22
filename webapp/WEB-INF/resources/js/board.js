@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', event => {
 
-    $.ajax({
+    /*$.ajax({
         type : "GET",
         url : "/board",
         dataType : "JSON",
@@ -31,13 +31,13 @@ window.addEventListener('DOMContentLoaded', event => {
                     "<td>" + boardViews + "</td>" +
                     "<td>" + boardWriter + "</td>" +
                     "<td>" + regDate + "</td>" +
-                    /*"<td>" + modDate + "</td>" +*/
+                    /!*"<td>" + modDate + "</td>" +*!/
                     "</tr>";
 
                 $("tbody.board").html(str);
             }
         }
-    });
+    });*/
 
     const datatablesSimple = document.getElementById('datatablesSimple');
     if (datatablesSimple) {

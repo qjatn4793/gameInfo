@@ -10,4 +10,9 @@ public class ProductController {
     public String product(){
         return "/product/product";
     }
+
+    @RequestMapping("/popularProduct")
+    public String popularProduct(){
+        return "/product/popularProduct";
+    }
 }

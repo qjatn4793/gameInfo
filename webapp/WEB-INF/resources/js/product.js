@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', event => {
             ajaxType = "GET";
         }
 
-        $.ajax({
+        /*$.ajax({
             type: ajaxType,
             url: "/productView",
             dataType: "JSON",
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 var prevNum = endNum - productSelect; // 현재 페이지 상품 시작
 
                 for (let i = prevNum; endNum > i; i++) {
-                /*for (var i = 0; Object.keys(data).length > i; i++) {*/
+                /!*for (var i = 0; Object.keys(data).length > i; i++) {*!/
                     if (Object.keys(data).length > i) {
                         let productSeq = data[Object.keys(data)[i]].productSeq;
                         let productName = data[Object.keys(data)[i]].productName;
@@ -123,7 +123,7 @@ window.addEventListener('DOMContentLoaded', event => {
                     if (currentPage > 1){
                         for (let j = currentPage - ((currentPage + 5) - endPage); currentPage - 1 > j; j++){
                             if (j > -1) {
-                            /*if (j != -1) {*/
+                            /!*if (j != -1) {*!/
                                 paging += '<li class="paging"><a href="#" data-page="' + (j + 1) + '">' + (j + 1) + '</a></li>';
                             }
                         }
@@ -242,7 +242,7 @@ window.addEventListener('DOMContentLoaded', event => {
                     product(searchItem, selectCategory);
                 });
             }
-        });
+        });*/
     }
 
     $("#searchBtn").click(function (){ // 검색 버튼 클릭 시

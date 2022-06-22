@@ -7,6 +7,12 @@
 
     <mvc:annotation-driven />
     <context:component-scan base-package="main.controller"/>
+    <context:component-scan base-package="admin.controller"/>
+    <context:component-scan base-package="board.controller"/>
+    <context:component-scan base-package="craw.controller"/>
+    <context:component-scan base-package="error.controller"/>
+    <context:component-scan base-package="login.controller"/>
+    <context:component-scan base-package="product.controller"/>
 
     <mvc:resources location="/WEB-INF/resources/css/" mapping="/css/**"/>
     <mvc:resources location="/WEB-INF/resources/js/" mapping="/js/**"/>
